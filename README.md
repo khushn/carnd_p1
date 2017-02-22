@@ -9,7 +9,7 @@ Overview
 Udacity CarND Project 1: Lane detection
 
 
-Project Writeup:
+Key files etc:
 ---
 [writeup file](https://github.com/khushn/carnd_p1/blob/master/writeup.md). 
 
