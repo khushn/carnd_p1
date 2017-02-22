@@ -50,6 +50,7 @@ Overall my pipeline has 5 steps.
  * [Optional Challenge](./challenge.mp4) processed output is at [challenge out](./extra.mp4)
 
  
+ Link to the [Jupyter notebook](./P1.ipynb)
  
 ###2. Potential shortcomings
 
