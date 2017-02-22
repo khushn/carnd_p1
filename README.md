@@ -13,4 +13,6 @@ Project Writeup:
 ---
 [writeup file](https://github.com/khushn/carnd_p1/blob/master/writeup.md). 
 
+[Jupyter notebook](https://github.com/khushn/carnd_p1/blob/master/P1.ipynb)
+
 Specs checklist [project rubric](https://review.udacity.com/#!/rubrics/322/view)
