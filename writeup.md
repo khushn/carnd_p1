@@ -32,7 +32,7 @@ Overall my pipeline has 5 steps.
  But for making the lane lines continuous, I had to make significant improvements to the draw_line() method. To list the enhancements: 
  ####1. Divide the lines into candidate left lane line and right lane lines
   
-  I saw there were around 35/40 lines on each frame. I applied a simple heuristic of -ve slope values become potentially left lane lines and +ve ones to the right lane line. Also I applied a filter of absolute value of slope between .5 and .9. This is to reject horijontal(ish) lines. 
+  I saw there were around 35/40 lines on each frame. I applied a simple heuristic of -ve slope values become potentially left lane lines and +ve ones to the right lane line. Also I applied a filter of absolute value of slope between .5 and .9. This is to reject horizontal(ish) lines. 
   
  ####2. Combine the lines based on slope value. 
  
