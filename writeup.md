@@ -31,15 +31,23 @@ Overall my pipeline has 5 steps.
 
  But for making the lane lines continuous, I had to make significant improvements to the draw_line() method. To list the enhancements: 
  ####1. Divide the lines into candidate left lane line and right lane lines
-  based on slope (-ve goes to left, and +ve goes to right)
- ####2. 
   
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
+  I saw there were around 35/40 lines on each frame. I applied a simple heuristic of -ve slope values become potentially left lane lines and +ve ones to the right lane line. Also I applied a filter of absolute value of slope between .5 and .9. This is to reject horijontal(ish) lines. 
+  
+ ####2. Combine the lines based on slope value. 
+ 
+  Keeping a tolerance value like.05, i.e if slope difference is within this range then probably lines belong to a feature (e.g. lane)
+  
+ ####3. Selecting the lines based on max frequency 
+   For the first frame, and for subsequent frames if needed, I select the lines based on no. of occurences for a given slope.
+   
+ ####4. Filter of low deviation from previous frame to minimize jitter
+   For noisy images (e.g transition between shadow to light and vice versa) as in the case of [challange video](./challenge.mp4), it helps if we move the line gradually between frames. For this I have a weighted averaging method, which gives more weightage to the prev frame lines, and moves them slightly in the direction of the current frame lines, if they are too much away. This helped in reducing jitter and also the noise.
+  
+ I was able to get reasonably good markings for all the [images](./test_images/out) and for all the videos, as well. 
+ ####1. [Solid white right](./solidhiteRight.mp4) --> [lane marked](./white.mp4)
+ 
+ 
 
 
 ###2. Identify potential shortcomings with your current pipeline
