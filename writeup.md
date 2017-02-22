@@ -45,10 +45,8 @@ Overall my pipeline has 5 steps.
    For noisy images (e.g transition between shadow to light and vice versa) as in the case of [challange video](./challenge.mp4), it helps if we move the line gradually between frames. For this I have a weighted averaging method, which gives more weightage to the prev frame lines, and moves them slightly in the direction of the current frame lines, if they are too much away. This helped in reducing jitter and also the noise.
   
  I was able to get reasonably good markings for all the [images](./test_images/out) and for all the videos, as well. 
- ####1. [Solid white right](./solidhiteRight.mp4) processed output is below
- <video width="960" height="540" controls>
-  <source src="./white.mp4">
- </video>
+ * [Solid white right](./solidhiteRight.mp4) processed output is at [white right out](./white.mp4)
+
  
  
 
