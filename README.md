@@ -13,4 +13,4 @@ Specs checklist [project rubric](https://review.udacity.com/#!/rubrics/322/view)
 
 Project Writeup:
 ---
-[writeup template file](https://github.com/khushn/carnd_p1/blob/master/writeup_template.md). 
+[writeup template file](https://github.com/khushn/carnd_p1/blob/master/writeup.md). 
