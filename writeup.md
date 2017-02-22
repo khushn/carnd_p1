@@ -53,11 +53,11 @@ Overall my pipeline has 5 steps.
  
 ###2. Potential shortcomings
 
- ####1 Tradeoffs 
+ ###1 Tradeoffs 
 
  I figured there are tradeoffs, for e.g. in order to reduce the jitter of lane lines, we also may end up having a nice looking marking but more noisy. This was particularly evident in the 3rd challenge video. 
 
- ####2 Global variable
+ ###2 Global variable
  
  I had to keep a prev frame line info, the slope m, and offset c, to compare with the next frame, to reduce jitter. Keeping global varianles is not a good idea in general.
 
