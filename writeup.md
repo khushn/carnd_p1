@@ -18,9 +18,16 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. Pipeline description
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+Overall my pipeline has 5 steps.
+ * Grayscale
+ * Canny edge detection
+ * Filtering out the region of interest
+ * Using Hough transform to draw the potential lane lines
+ * Superimpose the lane lines on the original image
+ 
+ For the [test images]: ./test_images just tuning of the parameters like threshold, rho, theta, min and max gap was sufficient.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
