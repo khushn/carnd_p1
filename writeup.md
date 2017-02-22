@@ -27,7 +27,7 @@ Overall my pipeline has 5 steps.
  * Using Hough transform to draw the potential lane lines
  * Superimpose the lane lines on the original image
  
- For the [test images]: ./test_images just tuning of the parameters like threshold, rho, theta, min and max gap was sufficient.
+ For the [test images](./test_images) just tuning of the parameters like threshold, rho, theta, min and max gap was sufficient.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
