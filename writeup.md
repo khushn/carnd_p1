@@ -51,7 +51,7 @@ Overall my pipeline has 5 steps.
 
  
  
-###2. Ppotential shortcomings
+###2. Potential shortcomings
 
  ####1 Tradeoffs 
 
