@@ -8,9 +8,11 @@ Overview
 
 Udacity CarND Project 1: Lane detection
 
-Specs checklist [project rubric](https://review.udacity.com/#!/rubrics/322/view)
 
-
-Project Writeup:
+Key files etc:
 ---
-[writeup template file](https://github.com/khushn/carnd_p1/blob/master/writeup.md). 
+[writeup file](https://github.com/khushn/carnd_p1/blob/master/writeup.md). 
+
+[Jupyter notebook](https://github.com/khushn/carnd_p1/blob/master/P1.ipynb)
+
+Specs checklist [project rubric](https://review.udacity.com/#!/rubrics/322/view)
